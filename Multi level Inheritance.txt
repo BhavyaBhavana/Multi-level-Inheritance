@@ -1,0 +1,26 @@
+class Animal{
+    public void eat(){
+        System.out.println("Animal is eating");
+    }
+}
+
+class Mammal extends Animal{
+    public void run(){
+        System.out.println("Animal is sleeping");
+    }
+}
+
+class Tiger extends Mammal{
+    public void bark(){
+        System.out.println("Animal is Casing");
+    }
+}
+
+public class MultiLevel{
+    public static void main(String[] args){
+        Tiger myTiger = new Tiger();
+        myTiger.eat();
+        myTiger.run();
+        myTiger.bark();
+    }
+}
